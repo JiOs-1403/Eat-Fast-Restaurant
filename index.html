@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header id="navbar" class="hide">
+      <div class="lg-menu">
+        <button id="menuToggle">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="logo-menu">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+
+      <a href="#">
+        <img class="logo" src="./freepik__background__61978.png" alt="food-delivery-logo">
+      </a>
+      <nav>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#About" class="nav-link">About Us</a>
+        <a href="#test" class="nav-link">Testimonial</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#faq" class="nav-link">FAQs</a>
+        <a href="#footer" class="nav-link">Contact</a>
+        <button class="nav-btn signin-btn" id="openModal">Sign Up</button>
+      </nav>
+
+      <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+          <button class="close-btn" id="closeModal">&times;</button>
+          <h2>Welcome Back</h2>
+          <p>Sign in to your account to continue</p>
+
+          <form id="signinForm">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="forgot-password">
+              <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="submit-btn">Sign In</button>
+          </form>
+
+          <div class="signup-link">
+            Don't have an account? <a href="#">Sign up</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <h3 style="margin: 0; color: #212529;">Menu</h3>
+          <button class="sidebar-close" id="sidebarClose">&times;</button>
+        </div>
+        <div class="sidebar-nav">
+          <a href="#home" class="sidebar-link">Home</a>
+          <a href="#About" class="sidebar-link">About Us</a>
+          <a href="#test" class="sidebar-link">Testimonial</a>
+          <a href="#how-it-works" class="sidebar-link">How It Works</a>
+          <a href="#faq" class="sidebar-link">FAQs</a>
+          <a href="#footer" class="sidebar-link">Contact</a>
+          <button class="nav-btn signin-btn" id="openModal">Sign Up</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section id="home" class="hero-section">
+        <div class="hero-text">
+          <h1>A Taste </br> That Stays With You</h1>
+          <p>
+            Fresh ingredients, bold flavors, and meals crafted with passion
+            delivered hot to your door
+          </p>
+          <div class="her-btn">
+            <button class="hero-btn pri-cta"><a href="#">Order Now</a></button>
+            <button class="hero-btn sec-cta">
+              <a href="#">Reserve a Table</a>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+          </div>
+
+          </button>
+        </div>
+        <div class="her-img">
+          <img
+            src="./front-view-male-courier-yellow-uniform-holding-food-package-delivery-coffee-cups-pink-background.png"
+            class="hero-img" alt="a-man-holding-a-food-delivery- box">
+        </div>
+      </section>
+
+      <section class="value">
+        <h2>Values</h2>
+        <div class="value-gd">
+          <div class="value-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-sprout-icon lucide-sprout">
+              <path
+                d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3" />
+              <path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4" />
+              <path d="M5 21h14" />
+            </svg>
+            <h3>Farm Fresh Ingredients</h3>
+            <p>Locally sourced, handpicked daily by trustworthy farmers.</p>
+          </div>
+          <div class="value-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-chef-hat-icon lucide-chef-hat">
+              <path
+                d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z" />
+              <path d="M6 17h12" />
+            </svg>
+            <h3>Chef-Crafted Menus</h3>
+            <p>Dishes designed by culinary masters</p>
+          </div>
+          <div class="value-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-truck-electric-icon lucide-truck-electric">
+              <path d="M14 19V7a2 2 0 0 0-2-2H9" />
+              <path d="M15 19H9" />
+              <path d="M19 19h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62L18.3 9.38a1 1 0 0 0-.78-.38H14" />
+              <path d="M2 13v5a1 1 0 0 0 1 1h2" />
+              <path d="M4 3 2.15 5.15a.495.495 0 0 0 .35.86h2.15a.47.47 0 0 1 .35.86L3 9.02" />
+              <circle cx="17" cy="19" r="2" />
+              <circle cx="7" cy="19" r="2" />
+            </svg>
+            <h3>Fast & Reliable Delivery</h3>
+            <p>Hot, fresh, right on time</p>
+          </div>
+          <div class="value-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-wine-icon lucide-wine">
+              <path d="M8 22h8" />
+              <path d="M7 10h10" />
+              <path d="M12 15v7" />
+              <path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z" />
+            </svg>
+            <h3>Memorable Dining</h3>
+            <p>Whether at Home or in-house, every bite is an experience</p>
+          </div>
+          <div class="value-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-fingerprint-icon lucide-fingerprint">
+              <path d="M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4" />
+              <path d="M14 13.12c0 2.38 0 6.38-1 8.88" />
+              <path d="M17.29 21.02c.12-.6.43-2.3.5-3.02" />
+              <path d="M2 12a10 10 0 0 1 18-6" />
+              <path d="M2 16h.01" />
+              <path d="M21.8 16c.2-2 .131-5.354 0-6" />
+              <path d="M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2" />
+              <path d="M8.65 22c.21-.66.45-1.32.57-2" />
+              <path d="M9 6.8a6 6 0 0 1 9 5.2v2" />
+            </svg>
+            <h3>Authenticity</h3>
+            <p>We stay true to our roots while embracing innovation.</p>
+          </div>
+          <div class="value-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-award-icon lucide-award">
+              <path
+                d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526" />
+              <circle cx="12" cy="8" r="6" />
+            </svg>
+            <h3>Quality</h3>
+            <p>Only the freshest, responsibly sourced ingredients make it to your plate.</p>
+          </div>
+          <div class="value-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-handshake-icon lucide-handshake">
+              <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+              <path
+                d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+              <path d="m21 3 1 11h-2" />
+              <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+              <path d="M3 4h8" />
+            </svg>
+            <h3>Community</h3>
+            <p>We support local farmers, suppliers, and families.</p>
+          </div>
+          <div class="value-grid">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-circle-star-icon lucide-circle-star">
+              <path
+                d="M11.051 7.616a1 1 0 0 1 1.909.024l.737 1.452a1 1 0 0 0 .737.535l1.634.256a1 1 0 0 1 .588 1.806l-1.172 1.168a1 1 0 0 0-.282.866l.259 1.613a1 1 0 0 1-1.541 1.134l-1.465-.75a1 1 0 0 0-.912 0l-1.465.75a1 1 0 0 1-1.539-1.133l.258-1.613a1 1 0 0 0-.282-.867l-1.156-1.152a1 1 0 0 1 .572-1.822l1.633-.256a1 1 0 0 0 .737-.535z" />
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+            <h3>Experience</h3>
+            <p>Every dish tells a story, every bite leaves a memory.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="About" class="about-us">
+        <h2 class="">About Us</h2>
+        <div class="abt abt--1">
+          <h3>Our Mission</h3>
+          <p>“To serve food that warms hearts, fuels connections, and celebrates life’s everyday moments.”</p>
+        </div>
+        <div class="abt abt--2">
+          <img src="./1760661467205.jpg" />
+        </div>
+        <div class="abt abt--4">
+          <h3>Our Story</h3>
+          <p>“Our journey began with a simple question: why can’t everyday meals taste like a celebration? From that
+            vision, we created Eat Fast, a place where tradition meets innovation. Our chefs combine classic
+            recipes with modern techniques, creating dishes that feel familiar yet extraordinary.”</p>
+        </div>
+        <div class="abt abt--3">
+          <img src="./1760661467474.jpg" />
+        </div>
+        <div class="abt abt--5">
+          <h3>Our Vision</h3>
+          <p>“To serve food that warms hearts, fuels connections, and celebrates life’s everyday moments.”</p>
+        </div>
+        <div class="abt abt--6">
+          <img src="./1760661467355.jpg" />
+        </div>
+      </section>
+
+
+      <section class="testimonial" id="test">
+        <h2>Testimonials</h2>
+        <div class="test-fx">
+          <blockquote class="quote">
+            <p>“Best burger in town, no debate. Their delivery is lightning-fast.”</p>
+          </blockquote>
+          <div class="test-fxx">
+            <img src="./young-handsome-man-posing-with-hat.jpg" />
+            <p>Emmanuel O.</p>
+          </div>
+        </div>
+        <div class="test-fx">
+          <blockquote class="quote">
+            <p>“Feels like dining at a 5-star restaurant, but at home. Truly exceptional.”</p>
+          </blockquote>
+          <div class="test-fxx">
+            <img src="./people-showing-support-respect-with-yellow-background-suicide-prevention-day.jpg" />
+            <p>Sarah A.</p>
+          </div>
+        </div>
+        <div class="test-fx">
+          <blockquote class="quote">
+            <p>“We used them for our wedding catering — guests are still talking about the food months later.” </p>
+          </blockquote>
+          <div class="test-fxx">
+            <img src="./young-black-woman-straw-hat-looking-away.jpg" />
+            <p>Daniel & Tolu</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="how" id="how-it-works">
+        <h2>How it works</h2>
+        <div class="how-grid">
+          <div class="how-cell">
+            <span class="how-num num1">O1</span>
+            <div class="how-flex">
+              <h3>Browse Our Menu</h3>
+              <p>Explore our wide selection of meals online.</p>
+            </div>
+          </div>
+          <div class="how-cell">
+            <span class="how-num num2">O2</span>
+            <div class="how-flex">
+              <h3>Place Your Order</h3>
+              <p>Quick, secure checkout in just a few clicks.</p>
+            </div>
+          </div>
+          <div class="how-cell">
+            <span class="how-num num3">O3</span>
+            <div class="how-flex">
+              <h3>Freshly Prepared</h3>
+              <p>Chefs cook your order from scratch using local ingredients</p>
+            </div>
+          </div>
+          <div class="how-cell">
+            <span class="how-num num4">O4</span>
+            <div class="how-flex">
+              <h3>Delivered Hot</h3>
+              <p>Straight from our kitchen to your doorstep, fast and fresh</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faqs" id="faq">
+        <h2>FAQ<span>S</span></h2>
+        <div class="faq-box">
+          <button class="faqq ">How long does delivery usually take?</button>
+          <div class="faqa">
+            <p>30–45 minutes depending on your location.</p>
+          </div>
+        </div>
+        <div class="faq-box">
+          <button class="faqq ">Do you offer vegetarian/vegan options?</button>
+          <div class="faqa">
+            <p>Absolutely. Our vegan and vegetarian dishes are among our most popular.</p>
+          </div>
+        </div>
+        <div class="faq-box">
+          <button class="faqq ">Can I book a table online?</button>
+          <div class="faqa">
+            <p>Yes, reservations can be made directly from our website.</p>
+          </div>
+        </div>
+        <div class="faq-box">
+          <button class="faqq ">Do you cater for large events?</button>
+          <div class="faqa">
+            <p>Yes, we provide full-service catering for events up to 500 guests.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="foot-grid">
+        <img src="./freepik__background__61978.png" />
+        <div class="foot-gd">
+          <h3>Hungry? We’re Just One Click Away</h3>
+          <button>Order Online</button>
+          <p>Whether you’re craving a quick meal, planning a family dinner, or organizing a large event, we’re here to
+            serve. Contact us anytime</p>
+        </div>
+        <div class="foot-gd">
+          <h3>Phone</h3>
+          <p>+234-810-0557-8053</p>
+        </div>
+        <div class="foot-gd">
+          <h3>Address</h3>
+          <p>No 5, Oloba layout, Oke-Eri Estate, Oba-Ile, Akure, Ondo State, Nigeria</p>
+        </div>
+      </div>
+      <div class="terms">
+        <span class="terms-1">Privacy Policy | Terms of Use | Cookie Policy</span>
+        <span class="terms-2">&copy; COPYRIGHT 2025 ALL RIGHTS RESERVED</span>
+      </div>
+    </footer>
+
+</body>
+
+</html>
