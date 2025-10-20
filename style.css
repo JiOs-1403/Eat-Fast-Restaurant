@@ -545,7 +545,7 @@ a {
   background-color: #2b8a3e;
   color: #f8f9fa;
   margin-bottom: 80px;
-  padding: 48px 0;
+  padding: 48px 16px;
 }
 
 .value h2 {
@@ -1234,4 +1234,5 @@ footer p {
     line-height: 1.7;
   }
 }
+
 
